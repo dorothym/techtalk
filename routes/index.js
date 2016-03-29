@@ -31,7 +31,7 @@ router.get('/shared-data',function(req, res, next) {
 });
 
 router.get('/limited-data',function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://customer-app-techtalk-0316.herokuapp.com/data");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.render('limited-data')
 });
