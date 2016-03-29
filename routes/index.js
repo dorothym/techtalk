@@ -10,12 +10,17 @@ router.get('/data', function(req, res, next) {
   res.render('data');
 });
 
-router.get('/shared-data',function(req, res, next) {
+router.get('/open-data',function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.render('shared-data')
 });
 
+router.get('/limited-data',function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://customer-app-techtalk-0316.herokuapp.com/data");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.render('shared-data')
+});
 
 
 module.exports = router;
