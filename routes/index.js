@@ -14,7 +14,8 @@ router.get('/hello', function(req,res,next) {
 });
 
 router.get('/test', function(req,res,next) {
-  res.header("Access-Control-Allow-Origin", "54.147.20.142");
+  // res.header("Access-Control-Allow-Origin", "54.147.20.142");
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000")
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.status(200).send("testing!")
 })
