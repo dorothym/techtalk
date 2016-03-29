@@ -1,10 +1,17 @@
 var express = require('express');
 var router = express.Router();
 
+var objToSend = {};
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'CORS test', para: 'Source application' });
 });
+
+router.get('/hello', function(req,res,next) {
+	obj.objToSend.body = "hello"
+	res.status(200).send(objToSend);
+})
 
 router.get('/private-data', function(req, res, next) {
   res.render('private-data');
