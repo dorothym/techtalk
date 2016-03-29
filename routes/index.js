@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/hello', function(req,res,next) {
-	obj.objToSend.body = "hello"
+	objToSend.body = "hello"
 	res.status(200).send(objToSend);
 })
 
