@@ -6,8 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'CORS test', para: 'Source application' });
 });
 
-router.get('/data', function(req, res, next) {
-  res.render('data');
+router.get('/private-data', function(req, res, next) {
+  res.render('private-data');
 });
 
 router.get('/open-data',function(req, res, next) {
