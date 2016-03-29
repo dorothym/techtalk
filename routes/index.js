@@ -9,8 +9,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/hello', function(req,res,next) {
-	objToSend.body = "hello"
-	res.status(200).send(objToSend);
+	// objToSend.body = "hello"
+	res.status(200).send("hellooooooooo!");
+
 })
 
 router.get('/private-data', function(req, res, next) {
