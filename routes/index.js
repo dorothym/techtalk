@@ -11,7 +11,12 @@ router.get('/', function(req, res, next) {
 router.get('/hello', function(req,res,next) {
 	// objToSend.body = "hello"
 	res.status(200).send("hellooooooooo!");
+});
 
+router.get('/test', function(req,res,next) {
+  res.header("Access-Control-Allow-Origin", "54.147.20.142");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.status(200).send("testing!")
 })
 
 router.get('/private-data', function(req, res, next) {
